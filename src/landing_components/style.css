@@ -53,7 +53,7 @@
   width: 160px;
   height: 54px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
   color: #fff;
   justify-content: center;
   gap: 15px;
@@ -71,6 +71,29 @@
   text-align: center;
   background-color: transparent;
   color: rgba(255, 255, 255, 1);
+  margin-left: 15px;
+}
+
+.anim_button {
+  position: relative;
+  border-radius: 1000px;
+  padding: 10px 20px;
+  transition: 0.5s all ease-in-out;
+}
+.anim_button:hover {
+  cursor: pointer;
+}
+.anim_button_float {
+  animation: float 0.8s linear alternate infinite;
+}
+
+@keyframes float {
+	50% {
+    transform: translateY(-px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 @media (max-width: 600px) {
   .landing_page {
@@ -82,6 +105,7 @@
   .common_btn {
     font-size: 15px;
     line-height: 18px;
+    margin-left: 10px;
   }
   .common_btn_wrap {
     background-color: rgba(20, 0, 255, 1);
@@ -96,6 +120,7 @@
   .common_btn {
     font-size: 14px;
     line-height: 16px;
+    /* margin-right: ; */
   }
   .common_btn_wrap img{
     width: 6px;
@@ -113,5 +138,8 @@
   .common_text span {
     font-weight: 800;
     font-size: 15.5px;
+  }
+  .common_btn_wrap {
+    gap: 5px;
   }
 }
