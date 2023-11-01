@@ -59,7 +59,6 @@ const TeacherRegistration = () => {
             required
           />
           <input ref={emailRef} type="email" placeholder="email" required />
-          {/* <div className="input_registr_file"> */}
             <input
               ref={fileRef}
               className="input_registr_file"
@@ -67,10 +66,6 @@ const TeacherRegistration = () => {
               placeholder="profilephoto"
               required
             />
-            {/* <p>rasm tanlang</p> */}
-            {/* <ion-icon name="camera-outline"></ion-icon> */}
-          {/* </div> */}
-
           <input
             ref={passwordRef}
             type="password"
@@ -86,7 +81,7 @@ const TeacherRegistration = () => {
           <button type="submit">Ro'yxatdan o'tish</button>
         </form>
         <Link className="alright_note" to={"/teacherlogin"}>
-          alright, do you have an account?
+          Avval ro'yxatdan o'tganmisiz?
         </Link>
       </div>
     </div>

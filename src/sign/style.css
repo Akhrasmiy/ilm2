@@ -45,7 +45,7 @@
   color: #fff;
   outline: none;
   padding: 10px 25px;
-  font-family: "Inter";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -56,7 +56,7 @@
 }
 .sign_form button {
   padding: 4px 0;
-  font-family: "Inter";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -78,7 +78,7 @@
 }
 .registr_title {
   text-align: center;
-  font-family: "Inter";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -89,7 +89,7 @@
   color: #ffffff;
 }
 .registr_form input {
-  font-family: "Inter";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -108,7 +108,7 @@
 .registr_form button {
   margin-top: 33px;
   padding: 5px 41px;
-  font-family: "Inter";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -139,47 +139,6 @@ input {
   -webkit-box-shadow: 0 0 0px 1000px #453663 inset;
 }
 
-/* input:autofill {
-background-color: #3706f4;
-} */
-/* 
-.input_registr_file {
-  display: block;
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-} */
-/* .input_registr_file p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 39px;
-  color: rgba(255, 255, 255, 0.5);
-  width: 100%;
-  background-color: transparent;
-  border-bottom: 2px solid #ffffff;
-  margin-bottom: 14px;
-} */
-/* .input_registr_file ion-icon{
- font-size: 50px;
- position: absolute;
- top: -6px;
- right: 0;
-} */
-/* .input_registr_file input {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  opacity: 0;
-} */
 
 @media only screen and (max-width: 720px) {
   .registr_title {
@@ -210,7 +169,6 @@ background-color: #3706f4;
     justify-content: center;
   }
   .registr_form button {
-    /* margin: 0 auto; */
     max-width: 300px;
     margin-top: 7px;
     padding: 5px 35px;
@@ -254,6 +212,4 @@ background-color: #3706f4;
     max-width: 500px;
     padding-bottom: 10px;
   }
- 
-
 }

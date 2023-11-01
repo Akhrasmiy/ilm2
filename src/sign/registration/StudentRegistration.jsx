@@ -58,7 +58,7 @@ const StudentRegistration = () => {
           </div>
           
         </form>
-        <Link className="alright_note" to={"/login"}>alright, do you have an account?</Link>
+        <Link className="alright_note" to={"/login"}>Avval ro'yxatdan o'tganmisiz?</Link>
       </div>
     </div>
   );

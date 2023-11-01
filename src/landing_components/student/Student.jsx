@@ -31,9 +31,9 @@ const Student = () => {
           <p className="common_text">
             <span>ilmlar.com</span> ta'lim platformasi, masofaviy ta'lim olishni istaganlar uchun to'g'ri tanlov. Siz bu platformada, barcha fanlar bo'yicha video kurslarni topishingiz mumkin. O'zingiz uchun qulay vaqtda va qulay joyda ta'lim oling.
           </p>
-          <div onClick={() => Registration()} className="common_btn_wrap">
+          <div onClick={() => Registration()} className="common_btn_wrap anim_button anim_button_float">
             <button className="common_btn">O’quvchi</button>
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="" />  
           </div>
           <img className="big_square" src={big_square} alt="" />
         </div>
