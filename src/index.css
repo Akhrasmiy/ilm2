@@ -44,10 +44,12 @@ img {
   width: 1px;
 }
 .homepage {
-  display: flex;
+  /* display: flex; */
+  width: 100%;
 }
 
 .w100 {
+  width: 100%;
   max-height: 90vh;
   overflow-y: scroll;
 }

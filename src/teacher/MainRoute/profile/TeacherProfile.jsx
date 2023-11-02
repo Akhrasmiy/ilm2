@@ -92,7 +92,10 @@ function TeacherProfile() {
           <button onClick={() => navigate("/editteacherprofile")}>
             Profilni tahrirlash
           </button>
-          <button>Chiqib ketish</button>
+          <button onClick={()=>{
+            localStorage.setItem("token","")
+            navigate("/")
+          }}>Chiqib ketish</button>
         </div>
       </div>
     </div>

@@ -70,8 +70,6 @@ function Balance() {
           topic="Olingan kurslarning narxi"
         />
       </div>
-
-      <Baystudy />
     </div>
   );
 }

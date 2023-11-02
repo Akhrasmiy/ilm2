@@ -212,6 +212,8 @@
 .student_lessons_wrap {
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: space-around;
+
   column-gap: 20px;
   row-gap: 20px;
   padding: 20px 0;
@@ -220,5 +222,8 @@
 @media only screen and (max-width: 540px) {
   .student_lessons_wrap {
     grid-template-columns: auto;
+  }
+  .sidebar-main-wrap_all{
+    padding: 0;
   }
 }

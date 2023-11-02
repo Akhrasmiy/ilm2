@@ -99,6 +99,14 @@ function NotBoughtCourse() {
   }
   return (
     <div className="main__course-buy">
+      <div className="mobiler"><MobileHeader
+            changeModalDars={changeModalDars}
+            changeModal={changeModal}
+            modal={modal}
+            modalDarslar={modalDarslar}
+            type={"Kurs haqida"}
+          /></div>
+      
       <div className="every__cource-info sidebar-main-wrap w100">
         <div className={modal ? "def modal-navbar" : "def yoq"}>
           <StudentNavbar changeModal={changeModal} modal={modal} />
@@ -110,20 +118,16 @@ function NotBoughtCourse() {
               : "sidebar-main-wrap mobile_none"
           }
         >
-          <MobileHeader
-            changeModalDars={changeModalDars}
-            changeModal={changeModal}
-            modal={modal}
-            modalDarslar={modalDarslar}
-            type={"Kurs haqida"}
-          />
+          
           <div
-            className="every__cource-bigImg"
+            // className="every__cource-bigImg"
             style={{
-              backgroundImage: `url(${"https://api.ilmlar.com" + deleteplatforma(kurs?.obloshka)
-                })`,
+              // backgroundImage: `url(${"https://api.ilmlar.com" + deleteplatforma(kurs?.obloshka)
+                // })`,
             }}
-          ></div>
+          >
+            <img width="100%" height="100%" src={"https://api.ilmlar.com/"+deleteplatforma(kurs?.obloshka)} alt="" />
+          </div>
 
           <div className="every__cource-desc">
             <div className="every__cource-header">

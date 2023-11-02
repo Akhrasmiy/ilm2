@@ -16,7 +16,7 @@
 
 .Nav ul li {
     position: relative;
-    padding: 5px 20px;
+    padding: 5px 25px;
 }
 
 .Nav ul li a {
@@ -30,6 +30,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 15px;
+    letter-spacing: 0.9px;
     color: #ffffff;
 }
 
@@ -61,7 +62,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: rgba(0, 0, 0, 0.3);
 }
 .d-none {
@@ -99,7 +99,7 @@
     font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     color: #ffffff;
 }

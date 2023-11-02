@@ -29,7 +29,7 @@ const Cart = (props) => {
     })
   },[])
   return (
-    <div className="d-flex justify-content-center"
+    <div className="d-flex justify-content-center w-1/2"
       onClick={() => {
         navigate("/student/kurs/" + kursId);
       }}

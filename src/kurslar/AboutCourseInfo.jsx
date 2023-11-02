@@ -112,10 +112,20 @@ function AboutCourseInfo() {
   }, []);
   return (
     <div className="main__course-buy">
-      <div className="every__cource-info sidebar-main-wrap w100">
+      <div className="mobiler"><MobileHeader 
+            changeModalDars={changeModalDars}
+            changeModal={changeModal}
+            modal={modal}
+            modalDarslar={modalDarslar}
+            type={"Kurs haqida"}
+          /></div>
+      
+      <div className="every__cource-info sidebar-main-wrap">
+        
         <div className={modal ? "def modal-navbar" : "def yoq"}>
           <StudentNavbar changeModal={changeModal} modal={modal} />
         </div>
+        
         <div
           className={
             modal || modalDarslar
@@ -123,13 +133,7 @@ function AboutCourseInfo() {
               : "sidebar-main-wrap mobile_none"
           }
         >
-          <MobileHeader
-            changeModalDars={changeModalDars}
-            changeModal={changeModal}
-            modal={modal}
-            modalDarslar={modalDarslar}
-            type={"Kurs haqida"}
-          />
+          
           <div
             className="every__cource-bigImg"
             style={{

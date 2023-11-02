@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import homeSidebar1 from "../imgs/sidebar1.png";
-import homeSidebar2 from "../imgs/sidebar2.png";
-import homeSidebar3 from "../imgs/sidebar3.png";
-import homeSidebar4 from "../imgs/sidebar4.png";
 import prev from "../imgs/prev.svg";
-import SidebarCart from "../components/SidebarCart/SidebarCart";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 function deleteplatforma(url) {

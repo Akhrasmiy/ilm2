@@ -7,3 +7,22 @@
   height: 150px;
   border-radius: 50%;
 }
+
+@media (max-width: 1300px){
+  .userprofile img{
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 950px){
+  .userprofile img{
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 540px){
+  .userprofile img{
+    width: 150px;
+    height: 150px;
+  }
+}

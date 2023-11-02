@@ -1,7 +1,7 @@
 .sidebar-main-content {
   padding: 0 6px;
   padding-top: 21px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .sidebar-main-content h2 {
@@ -162,11 +162,14 @@
   .every__course-buttons {
     margin-top: 78px;
   }
+  .mobiler{
+    display: block !important;
+  }
   .main__course-buy .modalDarslar {
     height: 100%;
   }
   .every__cource-desc {
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
@@ -219,7 +222,9 @@
     width: 100%;
   }
 }
-
+.mobiler{
+  display: none;
+}
 @media only screen and (max-width: 390px) {
   .every__cource-bigImg {
     height: 200px;
