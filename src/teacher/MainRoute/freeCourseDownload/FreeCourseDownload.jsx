@@ -180,11 +180,18 @@ function FreeCourseDownload() {
                         id=""
                       >
                         <option value="1">1 oy</option>
-                        <option value="3">3 oy</option>
-                        <option value="6">6 oy</option>
-                        <option value="9">9 oy</option>
-                        <option value="12">12 oy</option>
-                        <option value="forewer">for ever</option>
+                        <option value="3">2 oy</option>
+                        <option value="6">3 oy</option>
+                        <option value="9">4 oy</option>
+                        <option value="1">5 oy</option>
+                        <option value="3">6 oy</option>
+                        <option value="6">7 oy</option>
+                        <option value="9">8 oy</option>
+                        <option value="12">9 oy</option>
+                        <option value="1">10 oy</option>
+                        <option value="3">11 oy</option>
+                        <option value="6">12 oy</option>
+                        <option value="forewer">umrbod</option>
                       </select>
                     </div>
                   </div>

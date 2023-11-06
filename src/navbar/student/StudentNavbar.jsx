@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../style.css";
 import Userprofile from "../../components/userpofile/Userprofile";
 import t1 from "../../imgs/t1.svg";
@@ -8,6 +8,8 @@ import t6 from "../../imgs/t6.svg";
 import prev from "../../imgs/prev.svg";
 function StudentNavbar({ changeModal, modal }) {
   const [modalClass, setModalClass] = useState("");
+  const [bool, setBool] = useState(false);
+  let navigate = useNavigate();
   const lessonsRef = useRef();
   const balanceRef = useRef();
   const profileRef = useRef();
@@ -26,6 +28,17 @@ function StudentNavbar({ changeModal, modal }) {
       balanceRef?.current?.classList?.remove("active");
       profileRef?.current?.classList?.add("active");
     }
+    // console.log(window.location.pathname);
+    if (
+      window.location.pathname === "/student" ||
+      window.location.pathname === "/student/hisoblar" ||
+      window.location.pathname === "/student/profile/subs" ||
+      window.location.pathname === "/"
+    ) {
+      setBool(false);
+    }else{
+      setBool(true);
+    }
   }, [window.location.pathname]);
   const handleClick = () => {
     changeModal(false);
@@ -43,20 +56,29 @@ function StudentNavbar({ changeModal, modal }) {
       <div>
         <Userprofile />
       </div>
-      <ul className="student_nav_main">
-        <li ref={lessonsRef}>
-          <img src={t1} alt="" />
-          <Link to="/student">darslar</Link>
-        </li>
-        <li ref={balanceRef}>
-          <img src={t2} alt="" />
-          <Link to="/student/hisoblar">hisob balans</Link>
-        </li>
-        <li ref={profileRef}>
-          <img src={t6} alt="" />
-          <Link to="/student/profile/subs">profile</Link>
-        </li>
-      </ul>
+      {!bool ? (
+        <ul className="student_nav_main">
+          <li ref={lessonsRef}>
+            <img src={t1} alt="" />
+            <Link to="/student">darslar</Link>
+          </li>
+          <li ref={balanceRef}>
+            <img src={t2} alt="" />
+            <Link to="/student/hisoblar">hisob balans</Link>
+          </li>
+          <li ref={profileRef}>
+            <img src={t6} alt="" />
+            <Link to="/student/profile/subs">profile</Link>
+          </li>
+        </ul>
+      ) : (
+        <ul className="student_nav_main">
+          <li onClick={() => {navigate(-1)}} ref={lessonsRef}>
+            <img src={t1} alt="" />
+            <Link>orqaga</Link>
+          </li>
+        </ul>
+      )}
     </div>
   );
 }

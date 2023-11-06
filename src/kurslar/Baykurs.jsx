@@ -81,22 +81,7 @@ function Baykurs() {
         <div><button onClick={onBack} className="back">
           <ion-icon name="chevron-back-outline"></ion-icon>
         </button></div>
-        
-        {/* <div className="videos_navbar video_information_scroll">
-          <ul className="videos_navbar">
-            {courseData.map((course, index) => (
-              <li
-                key={index}
-                onClick={() => {
-                  setSelectedVideo(course);
-                  setCourseIndex(index + 1);
-                }}
-              >
-                {index + 1}-dars. {course.nomi}
-              </li>
-            ))}
-          </ul>
-        </div> */}
+
         <div className={modal ? "def2 modal-navbar" : "def2 yoq"}>
           <VideosNavbar
             courseData={courseData}

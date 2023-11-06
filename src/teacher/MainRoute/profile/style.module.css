@@ -33,7 +33,7 @@
   height: 80vh;
 } */
 
-.profile_teacher_desc p:first-child {
+.profile_teacher_desc p {
   font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -42,15 +42,7 @@
   color: #ffffff;
   margin-bottom: 15px;
 }
-.profile_teacher_desc p:nth-child(2) {
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
+
 
 .location {
   font-family: sans-serif;

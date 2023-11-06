@@ -49,7 +49,7 @@ const TeachEditProfile = () => {
     formData.append("joylashuv", joylashuvRef.current.value);
     formData.append("boglashlink", boglashlinkRef.current.value);
     formData.append("username", usernameRef.current.value);
-    formData.append("file", userimgRef.current.files[0]);
+    formData.append("file", userimgRef.current.files[0]); 
 
     axios
       .put("https://api.ilmlar.com/teacher/", formData, {

@@ -83,9 +83,13 @@ function TeacherProfile() {
         <div className={styles.profile_teacher_desc}>
           <p>Mutaxassislik: {profile.mutahasislik}</p>
           <p>BIO: {profile.bio}</p>
-          <label className={styles.location}>
+          <p>
+            <a href={profile.boglashlink}>Havola: {profile.boglashlink}</a>
+          </p>
+          <p className={styles.location}>
             Joylashuv: {profile.joylashuv}
-          </label>
+          </p>
+          
         </div>
 
         <div className={styles.profile_buttons}>
@@ -93,8 +97,8 @@ function TeacherProfile() {
             Profilni tahrirlash
           </button>
           <button onClick={()=>{
-            localStorage.setItem("token","")
-            navigate("/")
+             localStorage.clear();
+             navigate("/");
           }}>Chiqib ketish</button>
         </div>
       </div>

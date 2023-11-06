@@ -1,20 +1,9 @@
 
-@media only screen and(max-width:540px){
-    /* .commit .commit-div{
-        max-width: 300px;
-        width: 100%;
-        right: -50px;
-    } */
-}
-/* .modalDarslar .commit{
-  background-color: red !important;
-} */
 .commit{
   position: relative;
 }
 .writing_comment{
   position: fixed;
-  width: 20%;
   bottom: 70px;
 }
 .writing_comment input{

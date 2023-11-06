@@ -66,7 +66,7 @@ const Subs = () => {
           />
           <div>
             <p>{item?.fullname}</p>
-            <span>{item?.bio}</span>
+            <span>{item?.mutahasislik}</span>
           </div>
         </div>
       ))}

@@ -86,11 +86,9 @@ function NotBoughtCourse() {
       .then((response) => {
         console.log(response.data);
         if (response.data !== "hisobingizni toldiring") {
-
-          navigate("/student/kurs/olinganlar/" + kursId)
-        }
-        else{
-          alert("hisongizni toldring")
+          navigate("/student/kurs/olinganlar/" + kursId);
+        } else {
+          alert("hisongizni toldring");
         }
       })
       .catch((error) => {
@@ -99,15 +97,17 @@ function NotBoughtCourse() {
   }
   return (
     <div className="main__course-buy">
-      <div className="mobiler"><MobileHeader
-            changeModalDars={changeModalDars}
-            changeModal={changeModal}
-            modal={modal}
-            modalDarslar={modalDarslar}
-            type={"Kurs haqida"}
-          /></div>
-      
-      <div className="every__cource-info sidebar-main-wrap w100">
+      <div className="mobiler">
+        <MobileHeader
+          changeModalDars={changeModalDars}
+          changeModal={changeModal}
+          modal={modal}
+          modalDarslar={modalDarslar}
+          type={"Kurs haqida"}
+        />
+      </div>
+
+      <div className="every__cource-info sidebar-main-wrap">
         <div className={modal ? "def modal-navbar" : "def yoq"}>
           <StudentNavbar changeModal={changeModal} modal={modal} />
         </div>
@@ -118,15 +118,11 @@ function NotBoughtCourse() {
               : "sidebar-main-wrap mobile_none"
           }
         >
-          
-          <div
-            // className="every__cource-bigImg"
-            style={{
-              // backgroundImage: `url(${"https://api.ilmlar.com" + deleteplatforma(kurs?.obloshka)
-                // })`,
-            }}
-          >
-            <img width="100%" height="100%" src={"https://api.ilmlar.com/"+deleteplatforma(kurs?.obloshka)} alt="" />
+          <div className="bought_course_img_wrap">
+            <img
+              src={"https://api.ilmlar.com/" + deleteplatforma(kurs?.obloshka)}
+              alt=""
+            />
           </div>
 
           <div className="every__cource-desc">
@@ -139,8 +135,7 @@ function NotBoughtCourse() {
               >
                 <img
                   src={
-                    "https://api.ilmlar.com" +
-                    deleteplatforma(teacher?.path)
+                    "https://api.ilmlar.com" + deleteplatforma(teacher?.path)
                   }
                   alt=""
                 />
@@ -165,7 +160,7 @@ function NotBoughtCourse() {
               </p>
             </div>
             <div className="every__course-buttons">
-              <button onClick={() => kursOlish(kursId)}>Sotib olish</button>
+              <button onClick={() => kursOlish(kursId)}>Kursni olish</button>
             </div>
           </div>
         </div>
